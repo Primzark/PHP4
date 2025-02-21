@@ -32,7 +32,7 @@
             ],
             [
                 "categorie" => "Maison",
-                "nom" => "oreiller",
+                "nom" => "Oreiller",
                 "prix" => 49.99,
                 "description" => "Très confortable",
                 "image" => "./pillow.jpg"
@@ -121,7 +121,7 @@
                     <img src="' . $item["image"] . '" class="card-img-top" alt="' . $item["nom"] . '">
                     <div class="card-body">
                         <h5 class="card-title text-white">' . $item["nom"] . '</h5>
-                        <h6 class="card-subtitle mb-2 ">' . $item["categorie"] . '</h6>
+                        <h6 class="card-subtitle mt-2 mb-2 text-primary fst-italic">' . $item["categorie"] . '</h6>
                         <p class="card-text text-white">' . $item["description"] . '</p>
                         <p class="card-text fw-bold text-decoration-underline text-white">Prix : ' . number_format($item["prix"], 2, ',', ' ') . ' €</p>
                     </div>
