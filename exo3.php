@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Produits</title>
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,9 +17,9 @@
         <?php
 
         require_once("./product.php");
-        
 
-       
+
+
         $nouveauProduit = [
             "categorie" => "Maison",
             "nom" => "Aspirateur Robot CleanBot",
@@ -28,7 +29,7 @@
         ];
         $produits[] = $nouveauProduit;
 
-        
+
         echo '<div class="row">';
         foreach ($produits as $item) {
             // Format price using NumberFormatter
@@ -37,7 +38,7 @@
 
             echo '
             <div class="col-md-4 mb-4">
-                <div class="card  bg-dark rounded-3 text-center">
+                <div class="card bg-dark rounded-3 text-center">
                     <img src="' . $item["image"] . '" class="card-img-top" alt="' . $item["nom"] . '">
                     <div class="card-body">
                         <h3 class="mt-2 mb-2 text-primary fst-italic">' . $item["categorie"] . '</h3>
@@ -52,8 +53,8 @@
         ?>
     </div>
 
-    
-    
+
+
 </body>
 
 </html>
