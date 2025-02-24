@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -32,7 +36,6 @@
 
         echo '<div class="row">';
         foreach ($produits as $item) {
-            // Format price using NumberFormatter
             $fmt = new NumberFormatter('fr_FR', NumberFormatter::CURRENCY);
             $formattedPrice = $fmt->formatCurrency($item["prix"], 'EUR');
 
